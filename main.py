@@ -5,8 +5,7 @@ from sklearn import svm
 from sklearn import metrics
 
 # Load the dataset
-url = "https://raw.githubusercontent.com/kolaveridi/kaggle-Twitter-US-Airline-Sentiment-/master/Tweets.csv"
-df = pd.read_csv(url)
+df = pd.read_csv("complaints.csv")
 
 # Preprocessing the data
 df = df[['text', 'airline_sentiment']]
